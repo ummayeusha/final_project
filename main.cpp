@@ -1,22 +1,10 @@
-
-//Khandaker,Marufa(12-21536-2)
-//jahan masrurah( 12-21245-2)
-
-
-
 #include<stdio.h>
 #include<stdlib.h>
 #include<GL/glut.h>
 #include<math.h>
 
-
 int flag=0,ch=0,ch1=0;
-
 float a=0,b=0,c=0,d=0,e=0,f=0,g=0,h=0,i=0,j=0,k=0,l=0,m=0,n=0,p=0,q=0,s=0.7,x=0,y=0;
-
-
-
-
 
 void fish1()
 {
@@ -29,7 +17,6 @@ void fish1()
    glVertex2f(0.85+a,0.05);
    glVertex2f(0.75+a,0.0);
   glEnd();
-
 
   glBegin(GL_TRIANGLES);
   glColor3f(0.0,0.0,1.0);
@@ -55,7 +42,6 @@ glColor3f(1.0,0.0,0.0);
 	glVertex2f(0.77+a,0.02);
   glEnd();
 
-
   glColor3f(0.0,0.0,0.0);
   glPointSize(4.0);
   glBegin(GL_POINTS);
@@ -63,8 +49,6 @@ glColor3f(1.0,0.0,0.0);
   glEnd();
 
 }
-
-
 
 void fish2()
 {
@@ -104,7 +88,6 @@ glColor3f(0.8,0.5,0.0);
   glEnd();
 }
 
-
 void fish5()
 {
  glColor3f(0.0,0.4,1.0);//blue fish
@@ -141,7 +124,6 @@ void fish5()
   glVertex2f(-0.73-e,-0.235);
   glEnd();
 }
-
 
 void fish55()
 {
@@ -219,9 +201,6 @@ glColor3f(1.0,0.0,0.0);//red1 fish
 
 }
 
-
-
-///PLANTS
 void plant()
 	{
 	glColor3f(0.0,1.0,0.0);
@@ -247,7 +226,6 @@ void plant()
 	glVertex2f(0.8,-0.9);
 	glEnd();
 
-
 	glLineWidth(4.0);
 	glBegin(GL_LINES);
 	glVertex2f(0.5,-0.95);
@@ -270,8 +248,6 @@ void plant()
 	glVertex2f(0.5,-0.95);
 	glEnd();
 
-
-
 	glLineWidth(4.0);
 	glBegin(GL_LINES);
 	glVertex2f(0.175,-0.9);
@@ -293,8 +269,6 @@ void plant()
 	glVertex2f(0.25,-0.8);
 	glVertex2f(0.175,-0.9);
 	glEnd();
-
-
 
 	glLineWidth(4.0);
 	glBegin(GL_LINES);
@@ -340,8 +314,6 @@ void plant()
 	glVertex2f(-0.475,-0.9);
 	glEnd();
 
-
-
 	glLineWidth(4.0);
 	glBegin(GL_LINES);
 	glVertex2f(-0.9,-0.85);
@@ -366,7 +338,6 @@ void plant()
 
 	}
 
-//PEBBLES
 void pebbles()
 	{
 	glColor3f(0.5,0.35,0.05);
@@ -392,7 +363,6 @@ void pebbles()
 	glVertex2f(-0.0125,-0.925);
 	glEnd();
 
-
 	glBegin(GL_POLYGON);
 	glVertex2f(0.0125,-0.975);
 	glVertex2f(0.025,-0.975);
@@ -415,7 +385,6 @@ void pebbles()
 	glVertex2f(0.0125,-0.925);
 	glEnd();
 
-
 	glBegin(GL_POLYGON);
 	glVertex2f(0.65,-0.95);
 	glVertex2f(0.6625,-0.95);
@@ -426,7 +395,6 @@ void pebbles()
 	glVertex2f(0.6375,-0.9375);
 	glVertex2f(0.6375,-0.925);
 	glEnd();
-
 
 	glBegin(GL_POLYGON);
 	glVertex2f(0.675,-0.95);
@@ -439,7 +407,6 @@ void pebbles()
 	glVertex2f(0.6625,-0.925);
 	glEnd();
 
-
 	glBegin(GL_POLYGON);
 	glVertex2f(0.6625,-0.985);
 	glVertex2f(0.675,-0.985);
@@ -450,8 +417,6 @@ void pebbles()
 	glVertex2f(0.65,-0.9525);
 	glVertex2f(0.65,-0.96);
 	glEnd();
-
-
 
 	glBegin(GL_POLYGON);
 	glVertex2f(0.6875,-0.985);
@@ -464,7 +429,6 @@ void pebbles()
 	glVertex2f(0.675,-0.96);
 	glEnd();
 
-
 	glBegin(GL_POLYGON);
 	glVertex2f(0.6375,-0.985);
 	glVertex2f(0.65,-0.985);
@@ -475,8 +439,6 @@ void pebbles()
 	glVertex2f(0.625,-0.9475);
 	glVertex2f(0.625,-0.96);
 	glEnd();
-
-
 
 	glBegin(GL_POLYGON);
 	glVertex2f(0.25,-0.95);
@@ -489,7 +451,6 @@ void pebbles()
 	glVertex2f(0.2375,-0.925);
 	glEnd();
 
-
 	glBegin(GL_POLYGON);
 	glVertex2f(0.275,-0.95);
 	glVertex2f(0.2875,-0.95);
@@ -500,7 +461,6 @@ void pebbles()
 	glVertex2f(0.2625,-0.9375);
 	glVertex2f(0.2625,-0.925);
 	glEnd();
-
 
 	glBegin(GL_POLYGON);
 	glVertex2f(0.2625,-0.985);
@@ -524,8 +484,6 @@ void pebbles()
 	glVertex2f(0.275,-0.96);
 	glEnd();
 
-
-
 	glBegin(GL_POLYGON);
 	glVertex2f(-0.35,-0.95);
 	glVertex2f(-0.3625,-0.95);
@@ -537,7 +495,6 @@ void pebbles()
 	glVertex2f(-0.3375,-0.925);
 	glEnd();
 
-
 	glBegin(GL_POLYGON);
 	glVertex2f(-0.375,-0.95);
 	glVertex2f(-0.3875,-0.95);
@@ -548,7 +505,6 @@ void pebbles()
 	glVertex2f(-0.3625,-0.9375);
 	glVertex2f(-0.3625,-0.925);
 	glEnd();
-
 
 	glBegin(GL_POLYGON);
 	glVertex2f(-0.3625,-0.985);
@@ -594,7 +550,6 @@ void pebbles()
 	glVertex2f(-0.6375,-0.925);
 	glEnd();
 
-
 	glBegin(GL_POLYGON);
 	glVertex2f(-0.675,-0.95);
 	glVertex2f(-0.6875,-0.95);
@@ -605,7 +560,6 @@ void pebbles()
 	glVertex2f(-0.6625,-0.9375);
 	glVertex2f(-0.6625,-0.925);
 	glEnd();
-
 
 	glBegin(GL_POLYGON);
 	glVertex2f(-0.6625,-0.985);
@@ -629,7 +583,6 @@ void pebbles()
 	glVertex2f(-0.8875,-0.875);
 	glEnd();
 
-
 	glBegin(GL_POLYGON);
 	glVertex2f(0.9,-0.95);
 	glVertex2f(0.9125,-0.95);
@@ -640,7 +593,6 @@ void pebbles()
 	glVertex2f(0.8875,-0.9375);
 	glVertex2f(0.8875,-0.925);
 	glEnd();
-
 
 	glBegin(GL_POLYGON);
 	glVertex2f(0.925,-0.95);
@@ -653,7 +605,6 @@ void pebbles()
 	glVertex2f(0.9125,-0.925);
 	glEnd();
 
-
 	glBegin(GL_POLYGON);
 	glVertex2f(-0.9,-0.95);
 	glVertex2f(-0.9125,-0.95);
@@ -664,7 +615,6 @@ void pebbles()
 	glVertex2f(-0.8875,-0.9375);
 	glVertex2f(-0.8875,-0.925);
 	glEnd();
-
 
 	glBegin(GL_POLYGON);
 	glVertex2f(-0.925,-0.95);
@@ -679,21 +629,14 @@ void pebbles()
 
 	}
 
-
-
-
-
-
-void draw_pixel(GLint cx,GLint cy)
-	{
+void draw_pixel(GLint cx,GLint cy){
 	glColor3f(1.0,1.0,1.0);
 	glBegin(GL_POINTS);
 	glVertex2i(cx,cy);
 	glEnd();
-	}
+}
 
-void plotpixels(GLint h,GLint k,GLint x,GLint y)
-	{
+void plotpixels(GLint h,GLint k,GLint x,GLint y){
 	draw_pixel(x+h,y+k);
 	draw_pixel(-x+h,y+k);
 	draw_pixel(x+h,-y+k);
@@ -702,11 +645,9 @@ void plotpixels(GLint h,GLint k,GLint x,GLint y)
 	draw_pixel(-y+h,x+k);
 	draw_pixel(y+h,-x+k);
 	draw_pixel(-y+h,-x+k);
+}
 
-	}
-
-void circle_draw(GLint h,GLint k,GLint r)
-	{
+void circle_draw(GLint h,GLint k,GLint r){
 	GLint d=1-r,x=0,y=r;
 	while(y>x)
 		{
@@ -721,23 +662,14 @@ void circle_draw(GLint h,GLint k,GLint r)
 		++x;
 		}
 	plotpixels(h,k,x,y);
-	}
+}
 
-
-
-
-
-
-void myinit()
-	{
+void myinit(){
 	glClearColor(0.4,1.0,1.0,0.0);
 	glColor3f(1.0,1.0,0.0);
-	}
+}
 
-
-
-void idle()
-	{
+void idle(){
 	g+=0.00024;
 	h+=0.0002;
 	i-=0.00024;
@@ -753,9 +685,7 @@ void idle()
 	y+=0.0002;
 
 	glutPostRedisplay();
-	}
-
-
+}
 
 void bubbles_1()
 	{
@@ -813,19 +743,11 @@ void bubbles_3()
 	glPopMatrix();
 	}
 
-
-
-
-
-
 void display(void)
 	{
 	glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
  glColor3f(1.0,0.0,0.0);
  glPointSize(2.0);
-
-
-
 
 	if(a>=-1.99)
 		a=a-0.0005;
@@ -885,9 +807,6 @@ void display(void)
 	glutSwapBuffers();
 	}
 
-
-
-
 int main(int argc,char **argv)
 	{
 	glutInit(&argc,argv);
@@ -896,8 +815,6 @@ int main(int argc,char **argv)
 	glutInitWindowPosition(0,0);
 	glutInitWindowSize(500,500);
 	glutCreateWindow("fish");
-
-
 
 	myinit();
 
