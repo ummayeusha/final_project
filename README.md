@@ -1,7 +1,8 @@
 # Final_project
-**Topic:** 2D Animated Windmill 
-**Language:** C/C++
-**Graphics API:** OpenGL with GLUT (OpenGL Utility Toolkit)
+* **ID's:** Ummay Eusha (233003912), Miftahul Jannat (233016412)
+* **Topic:** 2D Animated Windmill 
+* **Language:** C/C++
+* **Graphics API:** OpenGL with GLUT (OpenGL Utility Toolkit)
 
 ## Project Overview
 
