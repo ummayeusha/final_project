@@ -1,8 +1,9 @@
 # Final_project
+
 * **ID's:** Ummay Eusha (233003912), Miftahul Jannat (233016412)
-* **Topic:** 2D Animated Windmill 
+* **Topic:** 2D Animated Windmill
 * **Language:** C/C++
-* **Graphics API:** OpenGL with GLUT (OpenGL Utility Toolkit)
+* **Graphics API:** OpenGL with GLU
 
 ## Project Overview
 
@@ -68,6 +69,8 @@ g++ main.cpp -o windmill.exe -lfreeglut -lglu32 -lopengl32
 
 ## Output Preview
 
-![Windmill Project Demo]("G:\preview.jpg")
+![Windmill Project Output](preview.jpg)
+<img width="1327" height="850" alt="preview" src="https://github.com/user-attachments/assets/7f0840a7-17d8-49ba-b51e-ecab3e714804" />
+
 
 This project demonstrates core 2D computer graphics principles including primitive assembly, custom shape generation via math functions, matrix transformations, coordinate translation, and frame rate management using GLUT timers. The result is a simple, structured 2D animation illustrating green energy conversion.
