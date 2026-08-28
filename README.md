@@ -1,4 +1,4 @@
-# final_project
+# Final_project
 **Topic:** 2D Animated Windmill 
 **Language:** C
 **Graphics API:** OpenGL with GLUT (OpenGL Utility Toolkit)
