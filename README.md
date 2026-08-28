@@ -3,7 +3,7 @@
 * **ID's:** Ummay Eusha (233003912), Miftahul Jannat (233016412)
 * **Topic:** 2D Animated Windmill
 * **Language:** C/C++
-* **Graphics API:** OpenGL with GLU
+* **Graphics API:** OpenGL with GLUT
 
 ## Project Overview
 
@@ -68,8 +68,6 @@ g++ main.cpp -o windmill.exe -lfreeglut -lglu32 -lopengl32
 ./windmill.exe
 
 ## Output Preview
-
-![Windmill Project Output](preview.jpg)
 <img width="1327" height="850" alt="preview" src="https://github.com/user-attachments/assets/7f0840a7-17d8-49ba-b51e-ecab3e714804" />
 
 
