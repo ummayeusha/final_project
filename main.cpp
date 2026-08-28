@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <GL/glut.h>
-#include<math.h>
+#include <math.h>
 
 GLfloat rotation = 90.0;
 float posX = 0, posY = 0, posZ = 0;
@@ -34,7 +34,6 @@ void windmill() {
 	glVertex2i(180, 450);
 	glVertex2i(20, 570);
 	glVertex2i(40, 520);
-	//glEnd();
 	glFlush();
 
 	//2nd wing
@@ -52,33 +51,12 @@ void drawCircle(int x1, int y1, int radius) {
 	float angle;
 	glBegin(GL_POLYGON);
 	for (angle = .1f; angle<361.0f; angle += 1.0f)
-
 	{
 		x2 = x1 + sin(angle)*radius;
 		y2 = y1 + cos(angle)*radius;
 		glVertex2f(x2, y2);
 	}
-
 	glEnd();
-}
-
-void wave() {
-	glColor3f(0.019, 0.35, 0.65);
-	drawCircle(0, 40, 20);
-	drawCircle(50, 40, 22);
-	drawCircle(100, 42, 15);
-	drawCircle(150, 42, 18);
-	drawCircle(200, 42, 12);
-	drawCircle(240, 42, 20);
-	drawCircle(280, 40, 20);
-	drawCircle(340, 40, 22);
-	drawCircle(400, 42, 15);
-	drawCircle(460, 42, 18);
-	drawCircle(530, 42, 12);
-	drawCircle(600, 42, 20);
-	drawCircle(650, 42, 25);
-	drawCircle(720, 42, 15);
-	drawCircle(780, 42, 24);
 }
 
 void cloud() {
@@ -94,7 +72,6 @@ void cloud() {
 	drawCircle(260, 670, 50);
 	drawCircle(290, 670, 35);
 	drawCircle(320, 670, 20);
-
 }
 
 void tree() {
@@ -126,7 +103,7 @@ void tree() {
 }
 
 void background() {
-	//back sky ash background
+	// Sky Background
 	glBegin(GL_QUADS);
 	glColor3f(0.70, 0.96, 0.96);
 	glVertex2i(0, 420);
@@ -136,102 +113,21 @@ void background() {
 	glEnd();
 	glFlush();
 
-	//back grass left
+	// Full Green Field
 	glBegin(GL_QUADS);
 	glColor3f(0.30, 0.701, 0.235);
-	glVertex2i(0, 420);
-	glVertex2i(0, 80);
-	glVertex2i(1236, 80);
-	glVertex2i(625, 420);
-	glEnd();
-	glFlush();
-
-	//road black middle
-	glBegin(GL_QUADS);
-	glColor3f(0, 0, 0);
-	glVertex2i(1236, 80);
-	glVertex2i(1277, 117);
-	glVertex2i(700, 420);
-	glVertex2i(625, 370);
-	glEnd();
-	glFlush();
-
-	//road black middle
-	glBegin(GL_TRIANGLES);
-	glColor3f(0, 0, 0);
-	glVertex2i(1277, 117);
-	glVertex2i(1236, 80);
-	glVertex2i(1277, 80);
-
-	glEnd();
-	glFlush();
-
-	//back grass right
-	glBegin(GL_TRIANGLES);
-	glColor3f(0.30, 0.701, 0.235);
-	glVertex2i(1277, 117);
-	glVertex2i(1277, 420);
-	glVertex2i(600, 420);
-	glEnd();
-	glFlush();
-
-	//river side
-	glBegin(GL_QUADS);
-	glColor3f(0.34, 0.266, 0.19);
-	glVertex2i(0, 80);
-	glVertex2i(0, 50);
-	glVertex2i(1277, 50);
-	glVertex2i(1277, 80);
-	glEnd();
-	glFlush();
-
-
-	glBegin(GL_TRIANGLES);
-	glColor3f(0.34, 0.266, 0.19);
-	glVertex2i(30, 80);
-	glVertex2i(60, 80);
-	glVertex2i(60, 85);
-	glEnd();
-	glFlush();
-
-	glBegin(GL_TRIANGLES);
-	glColor3f(0.34, 0.266, 0.19);
-	glVertex2i(90, 80);
-	glVertex2i(140, 80);
-	glVertex2i(140, 90);
-	glEnd();
-	glFlush();
-
-	glBegin(GL_TRIANGLES);
-	glColor3f(0.34, 0.266, 0.19);
-	glVertex2i(250, 80);
-	glVertex2i(350, 80);
-	glVertex2i(340, 85);
-	glEnd();
-	glFlush();
-
-	glBegin(GL_TRIANGLES);
-	glColor3f(0.34, 0.266, 0.19);
-	glVertex2i(450, 80);
-	glVertex2i(580, 80);
-	glVertex2i(590, 92);
-	glEnd();
-	glFlush();
-
-	glBegin(GL_TRIANGLES);
-	glColor3f(0.34, 0.266, 0.19);
-	glVertex2i(750, 80);
-	glVertex2i(850, 80);
-	glVertex2i(835, 90);
-	glEnd();
-	glFlush();
-
-	//river water
-	glBegin(GL_QUADS);
-	glColor3f(0.019, 0.35, 0.65);
-	glVertex2i(0, 50);
 	glVertex2i(0, 0);
 	glVertex2i(1277, 0);
+	glVertex2i(1277, 420);
+	glVertex2i(0, 420);
+	glEnd();
+	glFlush();
+
+	glBegin(GL_QUADS);
+	glColor3f(0, 0, 0);
+	glVertex2i(625, 420);
+	glVertex2i(675, 420);
+	glVertex2i(1277, 100);
 	glVertex2i(1277, 50);
 	glEnd();
 	glFlush();
@@ -266,7 +162,6 @@ void leftHouse() {
 	glEnd();
 	glFlush();
 
-
 	//house left side
 	glBegin(GL_QUADS);
 	glColor3f(0.698, 0.675, 0.612);
@@ -286,7 +181,7 @@ void leftHouse() {
 
 	//house left most window
 	glBegin(GL_QUADS);
-	glColor3f(0.384, 0.384, 0.384);//dark side
+	glColor3f(0.384, 0.384, 0.384);
 	glVertex2i(70, 205);
 	glVertex2i(70, 178);
 	glVertex2i(76, 171);
@@ -296,7 +191,7 @@ void leftHouse() {
 
 	//house left window
 	glBegin(GL_QUADS);
-	glColor3f(0.909, 0.780, 0.486);//house light
+	glColor3f(0.909, 0.780, 0.486);
 	glVertex2i(105, 203);
 	glVertex2i(105, 165);
 	glVertex2i(146, 166);
@@ -333,7 +228,6 @@ void leftHouse() {
 	glEnd();
 	glFlush();
 
-
 	//house right window middle part
 	glBegin(GL_QUADS);
 	glColor3f(0.30, 0.701, 0.235);
@@ -357,8 +251,6 @@ void leftHouse() {
 	glVertex2i(256, 178);
 	glEnd();
 	glFlush();
-
-
 
 	//house door lower
 	glBegin(GL_QUADS);
@@ -491,7 +383,6 @@ void powerHouse() {
 	glEnd();
 	glFlush();
 
-
 	glBegin(GL_LINES);
 	glColor3f(0, 0, 0);
 	glVertex2i(578, 390);
@@ -505,7 +396,6 @@ void powerHouse() {
 	glVertex2i(584, 353);
 	glEnd();
 	glFlush();
-
 
 	glBegin(GL_LINES);
 	glColor3f(0, 0, 0);
@@ -551,7 +441,6 @@ void powerHouse() {
 	glEnd();
 	glFlush();
 
-
 	//phouse top right
 	glBegin(GL_QUADS);
 	glColor3f(0.28, 0.29, 0.34);
@@ -582,7 +471,6 @@ void treeBase() {
 	glEnd();
 	glFlush();
 
-
 	//tree base 2
 	glBegin(GL_QUADS);
 	glColor3f(0.313, 0.321, 0.258);
@@ -610,14 +498,6 @@ void treeBase() {
 	glVertex2i(994, 317);
 	glEnd();
 	glFlush();
-
-	glBegin(GL_LINES);
-	glColor3f(0, 0, 0);
-	glVertex2i(1124, 296);
-	glVertex2i(994, 317);
-	glEnd();
-	glFlush();
-
 
 	glBegin(GL_LINES);
 	glColor3f(0, 0, 0);
@@ -717,7 +597,6 @@ void Display1(void) {
 	angle = angle - rate;
 	glTranslatef(-100.0f, -500.0f, -2.0f);
 
-
 	windmill();
 	glPopMatrix();
 	glFlush();
@@ -731,8 +610,8 @@ void Display1(void) {
 	glPushMatrix();
 	glTranslatef(posX, posY, posZ);
 	cloud();
-	wave();
 	glPopMatrix();
+
 	glutSwapBuffers();
 }
 
@@ -747,13 +626,13 @@ void myInit(void) {
 
 void update(int value) {
 	posX += move_unit;
-	if (posX>1000)
+	if (posX > 1000)
 		posX -= 1000;
 	glutPostRedisplay();
 	glutTimerFunc(50, update, 0);
 }
 
-void main(int argc, char** argv) {
+int main(int argc, char** argv) {
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
 	glutInitWindowSize(1300, 800);
@@ -763,4 +642,5 @@ void main(int argc, char** argv) {
 	myInit();
 	glutTimerFunc(1000, update, 0);
 	glutMainLoop();
+	return 0;
 }
