@@ -66,7 +66,4 @@ This simulation visually demonstrates the basic working principle of wind energy
 g++ main.cpp -o windmill.exe -lfreeglut -lglu32 -lopengl32
 ./windmill.exe
 
-
-## Conclusion
-
 This project demonstrates core 2D computer graphics principles including primitive assembly, custom shape generation via math functions, matrix transformations, coordinate translation, and frame rate management using GLUT timers. The result is a simple, structured 2D animation illustrating green energy conversion.
