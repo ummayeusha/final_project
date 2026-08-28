@@ -1,11 +1,11 @@
 # Final_project
 **Topic:** 2D Animated Windmill 
-**Language:** C
+**Language:** C/C++
 **Graphics API:** OpenGL with GLUT (OpenGL Utility Toolkit)
 
 ## Project Overview
 
-This repository contains a 2D computer graphics project built using C and the OpenGL/GLUT framework. The project simulates a rural landscape centered around a wind energy system. It features an animated rotating windmill, moving clouds across the sky, a power distribution house, residential structures, street lights with power cables, and surrounding vegetation.
+This repository contains a 2D computer graphics project built using C/C++ and the OpenGL/GLUT framework. The project simulates a rural landscape centered around a wind energy system. It features an animated rotating windmill, moving clouds across the sky, a power distribution house, residential structures, street lights with power cables, and surrounding vegetation.
 
 This file provides a complete overview of the project's design, code structure, technical rendering mechanics, and potential practical uses.
 
